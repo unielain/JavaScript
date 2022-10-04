@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>exercises</title>
+</head>
+<body>
+<p id="kg"></p>
+<script>
+  let talent = prompt("Give talents: ");
+  let pound = prompt("Give pounds: ");
+  let plumb = prompt("Give plumbs: ");
+  let talent_kg = talent*20*32*13.3;
+  let pound_kg = pound*32*13.3;
+  let plumb_kg = plumb*13.3;
+  let sum = Number(talent_kg)+Number(pound_kg)+Number(plumb_kg);
+  let kg = sum/1000;
+  kg_rounded = Math.trunc(kg);
+  let gram = (kg - kg_rounded) * 1000;
+  gram = gram.toFixed(2);
+  document.getElementById("kg").innerHTML="Result: "+kg_rounded+"kg and "+gram+"g.";
+</script>
+</body>
+</html>

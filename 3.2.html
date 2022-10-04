@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>exercises</title>
+</head>
+<body>
+<p id="cabin"></p>
+<script>
+  const cabin_class = prompt("Give cabin class: ")
+  const lux = "LUX"
+  if (cabin_class === lux){
+    document.getElementById("cabin").innerHTML="LUX is a cabin with a balcony on the upper deck"
+  } if (cabin_class.valueOf() === "A") {
+    document.getElementById("cabin").innerHTML="A is a cabin with a window above the parking deck."
+  } if (cabin_class.valueOf() === "B") {
+    document.getElementById("cabin").innerHTML="B is a cabin without a window above the parking deck."
+  } if (cabin_class.valueOf() === "C") {
+    document.getElementById("cabin").innerHTML="C is a cabin without a window below the parking deck."
+  } else {
+    document.getElementById("cabin").innerHTML="Couldn't find any cabin matching to your cabin number."
+  }
+</script>
+
+</body>
+</html>

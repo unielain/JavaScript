@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>exercises</title>
+</head>
+<body>
+<p id="pike_perch"></p>
+<script>
+  let lenght = prompt("Give the fish length: ");
+  if (lenght < 37) {
+    let missing = 37 -lenght;
+    document.getElementById("pike_perch").innerHTML="Your fish is "+missing+" cm too small. Let it go.";
+  } else {
+    document.getElementById("pike_perch").innerHTML="Your fish is large enough. Good Fishing!"
+  }
+</script>
+</body>
+</html>

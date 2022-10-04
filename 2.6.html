@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>exercises</title>
+</head>
+<body>
+<p id="first_code"></p>
+<p id="second_code"></p>
+
+<script>
+  let digits_three = [];
+  for (let i = 0; i < 3; i++){
+    let first_code = Math.random()*10;
+    first_code = Math.trunc(first_code);
+    digits_three.push(first_code);
+  }
+  let digits_four = [];
+  for (let i = 0; i < 4; i++){
+    let second_code = Math.floor(Math.random()*(6 - 1 + 1)) + 1;
+    digits_four.push(second_code)
+  }
+  document.getElementById("first_code").innerHTML="The first code: "+digits_three+".";
+  document.getElementById("second_code").innerHTML="The second code: "+digits_four+".";
+
+</script>
+</body>
+</html>

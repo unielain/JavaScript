@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>exercise</title>
+</head>
+<p id="sum"></p>
+<p id="prod"></p>
+<p id="mean"></p>
+<body>
+<script>
+let number_one = prompt("Give first number: ");
+let number_two = prompt("Give second number: ");
+let number_three = prompt("Give third number: ");
+
+const sum = Number(number_one) + Number(number_two) + Number(number_three);
+let product = number_one * number_two * number_three;
+let mean = sum/3;
+
+document.getElementById("sum").innerHTML="Sum of numbers: "+sum+".";
+document.getElementById("prod").innerHTML="Product of numbers: "+product+".";
+document.getElementById("mean").innerHTML="Mean of numbers: "+mean+".";
+
+</script>
+</body>
+</html>
